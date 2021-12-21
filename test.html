@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lglomb-Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            background: black;
+            overflow-x:hidden;
+        }
+
+        section{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+        .blue {
+            background: blue;
+        }
+
+        .curve{
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before{
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: black;
+            transform: translate(85%, 60%);
+        }
+
+        .curve::after{
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: black;
+            transform: translate(40%, 40%);
+            z-index: -1;
+        }
+
+        .spacer {
+           aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1{
+            background-image: url("./css/layer1.svg");
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="spacer layer1"></div>
+    <section>
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci corporis ducimus esse eum id
+            nam provident quae ullam vero. Ad ipsum laudantium nemo, quae quisquam soluta ut vel voluptatem?</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>A atque consectetur consequuntur cupiditate eaque inventore iste maxime molestiae provident, sunt? Architecto
+            ea iure natus perferendis rem repellat, tenetur? Amet delectus, dicta ducimus libero magnam necessitatibus
+            possimus quos sed!</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>Aperiam beatae ea ex laboriosam odio pariatur quaerat voluptate? Accusamus at aut consequatur cumque dolorem,
+            dolores earum est et ex expedita molestias nihil odio praesentium quidem reiciendis totam unde voluptas.</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>Atque, corporis culpa id magni modi tempore velit. Adipisci aliquam amet cumque dolor dolorum enim ex facere
+            harum, modi mollitia numquam quae quaerat quasi reiciendis sint tenetur voluptate? Eveniet, sequi.</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>Ab ad corporis cumque dignissimos dolore ducimus fugit, id impedit ipsam iure, magnam magni minima molestiae
+            quo rerum similique sint, sit totam vitae voluptas? Alias, illum, perspiciatis. Nostrum totam, vel.</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>Blanditiis commodi delectus illum iusto labore laboriosam molestias porro possimus saepe sed. Aperiam,
+            asperiores beatae ducimus eum fugit hic ipsam magnam minus modi natus necessitatibus quae, quod, quos velit
+            vitae?</p>
+    </section>
+
+    <div class="spacer layer1"></div>
+    <section>
+        <h1>Curves</h1>
+        <p>Dignissimos ex hic in nemo qui sunt voluptatibus. Accusamus aperiam consequatur corporis delectus,
+            dignissimos dolorem error exercitationem facere iure iusto maxime mollitia nihil pariatur qui quo sunt unde
+            veritatis voluptatum!</p>
+    </section>
+    <section>
+        <h1>Curves</h1>
+        <p>Accusantium autem culpa cumque cupiditate deleniti dolores eligendi error explicabo, facere ipsum itaque
+            laborum magni maiores nemo nihil nulla officiis omnis perspiciatis provident recusandae reprehenderit
+            suscipit tenetur veritatis voluptatibus voluptatum.</p>
+    </section>
+
+</body>
+</html>
