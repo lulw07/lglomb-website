@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .view {
+        width: 400px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .view {
+        width: 600px;
+    }
+}
+
 body{
-    color: white;
-    background: black;
+    color: black;
+    background: white;
     overflow-x:hidden;
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -9,14 +24,11 @@ body{
 
 .spacer {
     aspect-ratio: 960/300;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.layer1{
-    background-image: url("/css/layer1.svg");
+    background-image: url("/css/wave.svg");
 }
 
 .header {
@@ -27,17 +39,49 @@ body{
     font-size: 30px;
 }
 
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login>div{
+    padding: 10px;
+    margin: 0;
+}
+
+.dark-mode {
+    background-color: #282626;
+    color: white;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
 .h1 {
     min-height: 150px;
     width: 100%;
     font-size: 60px;
     text-align: center;
+    color: black;
 }
 
 
 a:link, a:visited, a:active
 {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 a:hover{
@@ -54,8 +98,8 @@ ul {
 }
 
 li {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 200px;
     float: left;
 }
 
@@ -65,13 +109,8 @@ li a {
     padding: 16px 20px;
     text-decoration: none;
 }
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 45px;
-}
 
-.content1{
+.content1 {
     margin: 0;
     height: auto;
     width: auto;
